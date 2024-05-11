@@ -1,4 +1,4 @@
-package com.eazybytes.accounts.entities;
+package com.eazybytes.loans.entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.EntityListeners;
@@ -16,7 +16,9 @@ import java.time.LocalDateTime;
 
 @MappedSuperclass
 @EntityListeners(AuditingEntityListener.class)
-@Getter @Setter @ToString
+@Getter
+@Setter
+@ToString
 public class BaseEntity {
 
     @CreatedDate
