@@ -1,0 +1,11 @@
+build:
+  version: v4.0
+
+accounts:
+  message: "Welcome to Eazybank accounts related PROD APIs"
+  contactDetails:
+    name: "Sarah Parker - Production Lead"
+    emails: "sarah@eazybank.com"
+  onCallSupport:
+    - (666)526-1234
+    - (666)786-1365

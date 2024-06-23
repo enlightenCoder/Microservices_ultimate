@@ -1,0 +1,11 @@
+build:
+  version: v3.0
+
+cards:
+  message: "Welcome to Eazybank Cards related QA APIs"
+  contactDetails:
+    name: "Smitha Ray - Cards Lead"
+    emails: "smitha@eazybank.com"
+  onCallSupport:
+    - (333)785-1021
+    - (333)423-5846

@@ -1,0 +1,11 @@
+build:
+  version: v4.0
+
+loans:
+  message: "Welcome to Eazybank Loans related PROD APIs"
+  contactDetails:
+    name: "Jill Baker - Loans Lead"
+    emails: "jill@eazybank.com"
+  onCallSupport:
+    - (111)526-1234
+    - (222)786-1365

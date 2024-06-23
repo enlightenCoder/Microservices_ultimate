@@ -1,0 +1,11 @@
+build:
+  version: v4.0
+
+cards:
+  message: "Welcome to Eazybank Cards related default APIs"
+  contactDetails:
+    name: "pete Murray- default Lead"
+    emails: "pete@eazybank.com"
+  onCallSupport:
+    - (000)526-1234
+    - (432)786-1365

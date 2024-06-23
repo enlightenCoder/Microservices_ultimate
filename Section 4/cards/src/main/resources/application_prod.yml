@@ -1,0 +1,15 @@
+#spring:
+#  config:
+#    activate:
+#      on-profile: "prod"
+#build:
+#  version: v4.0
+#
+#cards:
+#  message: "Welcome to Eazybank Cards related PROD APIs"
+#  contactDetails:
+#    name: "pete Murray- Cards Lead"
+#    emails: "pete@eazybank.com"
+#  onCallSupport:
+#    - (000)526-1234
+#    - (432)786-1365

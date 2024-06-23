@@ -1,4 +1,5 @@
 C:\Users\Welsa\Desktop\Microservices\Section 4\cards\src\main\java\com\eazybytes\cards\dto\ResponseDto.java
+C:\Users\Welsa\Desktop\Microservices\Section 4\cards\src\main\java\com\eazybytes\cards\dto\ContactDetails.java
 C:\Users\Welsa\Desktop\Microservices\Section 4\cards\src\main\java\com\eazybytes\cards\service\impl\CardsServiceImpl.java
 C:\Users\Welsa\Desktop\Microservices\Section 4\cards\src\main\java\com\eazybytes\cards\repository\CardsRepository.java
 C:\Users\Welsa\Desktop\Microservices\Section 4\cards\src\main\java\com\eazybytes\cards\CardsApplication.java
@@ -6,6 +7,7 @@ C:\Users\Welsa\Desktop\Microservices\Section 4\cards\src\main\java\com\eazybytes
 C:\Users\Welsa\Desktop\Microservices\Section 4\cards\src\main\java\com\eazybytes\cards\dto\ErrorResponseDto.java
 C:\Users\Welsa\Desktop\Microservices\Section 4\cards\src\main\java\com\eazybytes\cards\constants\CardsConstants.java
 C:\Users\Welsa\Desktop\Microservices\Section 4\cards\src\main\java\com\eazybytes\cards\controller\CardsController.java
+C:\Users\Welsa\Desktop\Microservices\Section 4\cards\src\main\java\com\eazybytes\cards\dto\CardsContactInfoDto.java
 C:\Users\Welsa\Desktop\Microservices\Section 4\cards\src\main\java\com\eazybytes\cards\exception\CardAlreadyExistsException.java
 C:\Users\Welsa\Desktop\Microservices\Section 4\cards\src\main\java\com\eazybytes\cards\service\ICardsService.java
 C:\Users\Welsa\Desktop\Microservices\Section 4\cards\src\main\java\com\eazybytes\cards\audit\AuditAwareImpl.java

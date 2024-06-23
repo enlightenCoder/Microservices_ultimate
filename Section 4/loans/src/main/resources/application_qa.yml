@@ -1,0 +1,16 @@
+#spring:
+#  config:
+#    activate:
+#      on-profile: "qa"
+#
+#build:
+#  version: v3.0
+#
+#loans:
+#  message: "Welcome to Eazybank Loans related QA APIs"
+#  contactDetails:
+#    name: "Greeta Paul - Loans Lead"
+#    emails: "greeta@eazybank.com"
+#  onCallSupport:
+#    - (333)785-1021
+#    - (333)423-5846

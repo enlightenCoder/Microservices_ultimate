@@ -1,6 +1,7 @@
 package com.eazybytes.cards.controller;
 
 import com.eazybytes.cards.constants.CardsConstants;
+import com.eazybytes.cards.dto.CardsContactInfoDto;
 import com.eazybytes.cards.dto.CardsDto;
 import com.eazybytes.cards.dto.ErrorResponseDto;
 import com.eazybytes.cards.dto.ResponseDto;
@@ -13,7 +14,9 @@ import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Pattern;
-import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.core.env.Environment;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -30,11 +33,18 @@ import org.springframework.web.bind.annotation.*;
 )
 @RestController
 @RequestMapping(path = "/api", produces = {MediaType.APPLICATION_JSON_VALUE})
-@AllArgsConstructor
+@RequiredArgsConstructor
 @Validated
 public class CardsController {
 
-    private ICardsService iCardsService;
+    private final ICardsService iCardsService;
+
+    private final CardsContactInfoDto cardsContactInfoDto;
+
+    private final Environment environment;
+
+    @Value("${build.version}")
+    private String buildVersion;
 
     @Operation(
             summary = "Create Card REST API",
@@ -159,6 +169,22 @@ public class CardsController {
                     .status(HttpStatus.EXPECTATION_FAILED)
                     .body(new ResponseDto(CardsConstants.STATUS_417, CardsConstants.MESSAGE_417_DELETE));
         }
+    }
+
+    @GetMapping("/build-info")
+    public String getVersion() {
+        return this.buildVersion;
+    }
+
+    @GetMapping("/java-version")
+    public String getJavaVersion() {
+        return this.environment.getProperty("JAVA_HOME");
+    }
+
+
+    @GetMapping("/contact-info")
+    public CardsContactInfoDto getContactInfo() {
+        return this.cardsContactInfoDto;
     }
 
 }
